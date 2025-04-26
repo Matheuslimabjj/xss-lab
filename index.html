@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>XSS Lab – Formulário Vulnerável</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Envie seu comentário</h1>
+  <form action="comments.html" method="GET">
+    <input type="text" name="comment" placeholder="Escreva algo..." required />
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

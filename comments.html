@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comentários</title>
+</head>
+<body>
+  <h2>Comentário recebido:</h2>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const comment = params.get("comment");
+    document.write(comment); // 👈 Aqui está o XSS
+  </script>
+</body>
+</html>
